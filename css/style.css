@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,.navbar{
+    background-color: black !important;
+    color: white !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    line-height: 40px;
+}
+.main h2{
+    margin-top: 150px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.green{
+    position: relative;
+}
+.green::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 128, 87);
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    z-index: -1;
+}
+.btn-1{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 128, 87);
+    color: white;
+    text-transform:uppercase;
+}
+.cards{
+    margin-top: 50px;
+}
+.card{transition: 1s;}
+.card:hover{
+    transform: scale(1.1);
+}
+.row{
+    width: 90%;
+    margin: auto;
+}
+.infos{margin-top: 50px;}
+.img-col img{
+    width: 80%;
+    height: 500px;
+}
+.info h2{
+    color: rgb(0, 128, 87);
+    font-weight: 900;
+}
+.info i{
+    font-size: 20px;
+    color: rgb(0, 128, 87);
+}
+.right{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.right p{
+    transform: translate(5px,5px);
+}
+.info p{
+    line-height: 30px;
+}
+.cards .card{
+    min-height: 200px;
+    color: white;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 128, 87);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.price .col-md-6{
+    color: rgb(0, 128, 87);
+}
+.carousel-indicators{
+    bottom: -5rem;
+}
+.carousel-indicators button{
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50%;
+}
+::placeholder {
+    color: #fff !important;
+}
+/* /////////////////////////////////////// */
+.works .layerWorks {
+    background-color: var(--primaryColor);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.works .itemWorks:hover .layerWorks {
+    opacity: 1;
+}
+
+.itemWorks i {
+    cursor: pointer;
+}
+
+.works ul .active {
+    border: 0;
+}
+/* //////////////////////////////// */
+.card-wrapper{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    line-height: 40px;
+}
